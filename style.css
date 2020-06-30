@@ -398,11 +398,11 @@ color: #424242;
 
   ul {
     position: fixed;
-    width: 100%;
+    width: 50%;
     height: 100vh;
     background: #424242;
     top: 80px;
-    left: 50%;
+    left: -100%;
     text-align: center;
     transition: all .5s;
     z-index: 1;
