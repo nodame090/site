@@ -423,6 +423,10 @@ color: #424242;
   Text-Decoration: None !important; 
   color: white;
 }
+    nav ul li a:visited {
+  Text-Decoration: None !important; 
+  color: white;
+}
 nav ul li a:before {
   position: absolute;
   content: '';
