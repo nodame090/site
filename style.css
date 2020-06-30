@@ -383,7 +383,7 @@ color: #424242;
 }
 }
 
-@media(max-width: 650px) {
+@media (max-width: 650px) {
   label #btn {
     display: block;
     position: absolute;
@@ -415,6 +415,7 @@ color: #424242;
 
   }
   nav ul li a {
+    Text-Decoration: None !important; 
     font-size: 20px;
     color: white;
   }
