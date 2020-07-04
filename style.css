@@ -1,4 +1,4 @@
-html {
+:root {
   scroll-behavior: smooth;
 }
 
@@ -20,8 +20,8 @@ background: #FFFFFF;
 }
 
 .logo {
-  position: fixed !important;
-  position: -webkit-fixed !important;
+  position: fixed;
+  position: -webkit-fixed;
   letter-spacing: 3px;
   font-family: 'Allerta Stencil', sans-serif;
   font-weight: normal;
@@ -32,8 +32,8 @@ background: #FFFFFF;
 
 nav {
   height: 80px;
-  position: sticky !important;
-  position: -webkit-sticky !important;
+  position: sticky;
+  position: -webkit-sticky;
   background-color: white;
   top: 0px;
   padding:5px;
@@ -502,8 +502,7 @@ color: #424242;
 
   
 ul {
-    position: fixed !important;
-    position: -webkit-fixed !important;
+    position: fixed;
     width: 440px;
     height: 100vh;
     background: #424242;
