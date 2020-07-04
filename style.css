@@ -1,4 +1,4 @@
-:root {
+html {
   scroll-behavior: smooth;
 }
 
@@ -14,13 +14,14 @@
 
 body {
 position: relative;
-width: 1245px;
-height: 3999px;
+width: 380px;
+height: 4000px;
 background: #FFFFFF;
 }
 
 .logo {
-  position: fixed;
+  position: fixed !important;
+  position: -webkit-fixed !important;
   letter-spacing: 3px;
   font-family: 'Allerta Stencil', sans-serif;
   font-weight: normal;
@@ -31,7 +32,8 @@ background: #FFFFFF;
 
 nav {
   height: 80px;
-  position: sticky;
+  position: sticky !important;
+  position: -webkit-sticky !important;
   background-color: white;
   top: 0px;
   padding:5px;
@@ -485,7 +487,7 @@ color: #424242;
 
 
 
-@media (max-width: 650px) {
+@media (max-width: 440px) {
      label #btn {
     display: block;
     position: absolute;
@@ -500,7 +502,8 @@ color: #424242;
 
   
 ul {
-    position: fixed;
+    position: fixed !important;
+    position: -webkit-fixed !important;
     width: 440px;
     height: 100vh;
     background: #424242;
