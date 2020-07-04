@@ -1,3 +1,6 @@
+:root {
+  scroll-behavior: smooth;
+}
 
 * {
   margin: 0;
@@ -5,7 +8,7 @@
   box-sizing: border-box;
   color:black; 
   text-decoration: none;
-  font-family: 'Cutive Mono', monospace;
+  //font-family: 'Cutive Mono', monospace;
   font-weight: bold;
 }
 
@@ -16,18 +19,23 @@ height: 3999px;
 background: #FFFFFF;
 }
 
-
 .logo {
-  position: absolute;
+  position: fixed;
+  letter-spacing: 3px;
   font-family: 'Allerta Stencil', sans-serif;
   font-weight: normal;
   font-size: 25px;
-  margin-left: 30px;
+  margin-left: 50px;
   line-height: 95px;
 }
 
 nav {
   height: 80px;
+  position: sticky;
+  background-color: white;
+  top: 0px;
+  padding:5px;
+  z-index: 1;
 }
 
 nav ul {
@@ -79,13 +87,94 @@ nav ul li a:hover:before {
   display: none;
 }
 
-/*
-.active a {
-  background-color: white !important;
-  color: black !important;
-  transition: height 2s; 
+
+.section1 {
+  font-size: 50px;
+  display: block;
 }
-*/
+
+#home {
+  height: 700px;
+}
+
+
+#about {
+  height: 300px;
+
+position: absolute;
+width: 229px;
+left: 94px;
+top: 750px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 56px;
+
+color: #424242;
+}
+
+.line {
+  position: absolute;
+  width: 40px;
+  height: 0px;
+  left: 94px;
+  top: 830px;
+  border: 5px solid #4BBEFF;
+}
+
+.text {
+position: absolute;
+width: 764px;
+height: 388px;
+left: 94px;
+top: 880px;
+font-weight: normal;
+font-family: sans-serif;
+font-size: 18px;
+line-height: 29px;
+
+color: #424242;
+}
+
+.skill {
+position: absolute;
+width: 725px;
+height: 81px;
+left: 141px;
+top: 1230px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 29px;
+
+color: #635F5F;
+}
+
+.tab1 {
+position: absolute;
+width: 773px;
+height: 92px;
+left: 103px;
+top: 1230px;
+
+background: #EBE9E9;
+opacity: 0.5;
+}
+
+.tab2 {
+position: absolute;
+width: 9px;
+height: 92px;
+left: 94px;
+top: 1230px;
+
+background: #4BBEFF;
+}
+
 
 @media(max-width: 944px) {
   logo {
@@ -94,12 +183,17 @@ nav ul li a:hover:before {
   line-height: 80px;
 
   } 
+   label #btn {
+    display: block;
+    position: absolute;
+  } 
+
   nav ul li a {
     font-size: 17px;
 
   }
 
- 
+
 }
 
 label #btn,
@@ -119,9 +213,15 @@ label #cancel {
 @media(max-width: 860px) {
   label #btn {
     display: block;
+    position: absolute;
   } 
 
-
+  body {
+position: absolute;
+width: 440px;
+height: 3999px;
+background: #FFFFFF;
+}
 
   ul {
     position: fixed;
@@ -331,7 +431,7 @@ background: #FF4B8C;
 position: absolute;
 width: 900px;
 height: 109.36px;
-left: .5%;
+left: 2%;
 top: -9%;
 
 font-family: 'Allerta Stencil', sans-serif;
@@ -346,8 +446,8 @@ color: #424242;
 position: absolute;
 width: 787.3px;
 height: 109.36px;
-left: 3%;
-top: 5%;
+left: 6%;
+top: 8%;
 
 font-family: 'Allerta Stencil', sans-serif;
 font-weight: normal;
@@ -383,22 +483,25 @@ color: #424242;
 }
 }
 
+
+
 @media (max-width: 650px) {
-  label #btn {
+     label #btn {
     display: block;
     position: absolute;
   } 
 
-  body {
-  position: relative;
+    body {
+  position: absolute;
   width: 440px;
   height: 3999px;
   background: #FFFFFF;
   }
 
-  ul {
+  
+ul {
     position: fixed;
-    width: 50%;
+    width: 440px;
     height: 100vh;
     background: #424242;
     top: 80px;
@@ -415,15 +518,10 @@ color: #424242;
 
   }
   nav ul li a {
-    Text-Decoration: None !important; 
     font-size: 20px;
     color: white;
   }
   nav ul li a:hover {
-  Text-Decoration: None !important; 
-  color: white;
-}
-    nav ul li a:visited {
   Text-Decoration: None !important; 
   color: white;
 }
@@ -439,6 +537,7 @@ nav ul li a:before {
   transform-origin: right;
   transition: transform .4s linear;
 }
+
 #check:checked ~ ul {
   left: 0;
   	}
@@ -450,7 +549,191 @@ nav ul li a:before {
 #check:checked ~ label #cancel {
   display: block;
   position: absolute;
+
+}
+
+.text {
+position: absolute;
+width: 300px;
+height: 388px;
+left: 30px;
+top: 880px;
+font-weight: normal;
+font-family: sans-serif;
+font-size: 18px;
+line-height: 29px;
+margin-right: 600px;
+text-align: left;
+}
+
+.skill {
+position: absolute;
+width: 300px;
+height: 81px;
+left: 50px;
+top: 1625px;
+text-align: left;
+
+font-family: Roboto500
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 29px;
+margin-right: 600px;
+color: #635F5F;
+}
+
+.tab1 {
+position: absolute;
+width: 320px;
+height: 173px;
+left: 30px;
+top: 1625px;
+
+background: #EBE9E9;
+opacity: 0.5;
+}
+
+.tab2 {
+position: absolute;
+width: 9px;
+height: 173px;
+left: 28px;
+top: 1625px;
+
+background: #4BBEFF;
+}
+
+}
+
+@media (max-width: 604.7px) {
+     label #btn {
+    display: block;
+    position: absolute;
+  } 
+
+    body {
+  position: absolute;
+  width: 604px;
+  height: 3999px;
+  background: #FFFFFF;
+  }
+ul {
+    position: fixed;
+    width: 604px;
+    height: 100vh;
+    background: #424242;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    z-index: 1;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+    color: white;
+
+  }
+  nav ul li a {
+    font-size: 20px;
+    color: white;
+  }
+  nav ul li a:hover {
+  Text-Decoration: None !important; 
+  color: white;
+}
+nav ul li a:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: white;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .4s linear;
+}
+
+#check:checked ~ ul {
+  left: 0;
+  	}
+
+#check:checked ~ label #btn {
+  display: none;
+}
+
+#check:checked ~ label #cancel {
+  display: block;
+  position: absolute;
+
 }
 }
 
+@media (max-width: 450px) {
+     label #btn {
+    display: block;
+    position: absolute;
+  } 
 
+    body {
+  position: absolute;
+  width: 440px;
+  height: 3999px;
+  background: #FFFFFF;
+  }
+ul {
+    position: fixed;
+    width: 440px;
+    height: 100vh;
+    background: #424242;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    z-index: 1;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+    color: white;
+
+  }
+  nav ul li a {
+    font-size: 20px;
+    color: white;
+  }
+  nav ul li a:hover {
+  Text-Decoration: None !important; 
+  color: white;
+}
+nav ul li a:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: white;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .4s linear;
+}
+
+#check:checked ~ ul {
+  left: 0;
+  	}
+
+#check:checked ~ label #btn {
+  display: none;
+}
+
+#check:checked ~ label #cancel {
+  display: block;
+  position: absolute;
+
+}
+}
