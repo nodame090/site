@@ -1,4 +1,4 @@
-:root {
+html {
   scroll-behavior: smooth;
 }
 
@@ -21,7 +21,6 @@ background: #FFFFFF;
 
 .logo {
   position: fixed;
-  position: -webkit-fixed;
   letter-spacing: 3px;
   font-family: 'Allerta Stencil', sans-serif;
   font-weight: normal;
@@ -33,7 +32,6 @@ background: #FFFFFF;
 nav {
   height: 80px;
   position: sticky;
-  position: -webkit-sticky;
   background-color: white;
   top: 0px;
   padding:5px;
