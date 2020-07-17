@@ -115,12 +115,10 @@ nav ul li a:hover {
 }
 
 nav ul li a:hover:before {
-    transform: scaleX(1);
+  transform: scaleX(1);
   transform-origin: left;
 }
-
-
-
+p
 #check {
   display: none;
 }
@@ -178,7 +176,10 @@ color: black;
 
 .link1 {
   color: #4BBEFF;
+  cursor: pointer;
+  text-decoration: none;
 }
+
 
 .skill {
 position: absolute;
@@ -308,10 +309,6 @@ left: 55%;
 top: 1930px;
 
 }
-
-
-
-
 
 
 #contact {
@@ -551,7 +548,7 @@ top: 1930px;
 
 
 
-*/
+
 @media(max-width: 944px) {
   logo {
   font-size: 35px;
@@ -955,12 +952,38 @@ nav ul li a:before {
 }
 
 
+.aboutMe {
+height: 400px;
+
+position: absolute;
+width: 229px;
+left: 94px;
+top: 900px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 56px;
+
+color: #424242;
+}
+
+.line {
+  position: absolute;
+  width: 40px;
+  height: 0px;
+  left: 94px;
+  top: 970px;
+  border: 3px solid #4BBEFF;
+}
+
 .text {
 position: absolute;
 width: 300px;
 height: 388px;
 left: 30px;
-top: 880px;
+top: 1010px;
 font-weight: normal;
 font-family: sans-serif;
 font-size: 18px;
@@ -974,7 +997,7 @@ position: absolute;
 width: 300px;
 height: 81px;
 left: 50px;
-top: 1560px;
+top: 1690px;
 text-align: left;
 
 font-family: Roboto500
@@ -991,9 +1014,9 @@ position: absolute;
 width: 320px;
 height: 173px;
 left: 30px;
-top: 1560px;
+top: 1690px;
 
-background: #FFE7A9;
+background: #D8F0FD;
 opacity: 0.5;
 }
 
@@ -1002,7 +1025,7 @@ position: absolute;
 width: 9px;
 height: 173px;
 left: 28px;
-top: 1560px;
+top: 1690px;
 
 background: #4BBEFF;
 }
@@ -1012,18 +1035,18 @@ position: absolute;
 width: 334px;
 height: 280px;
 left: 25%;
-top: 1770px;
+top: 1890px;
 background: url(https://i.imgur.com/VDORVMf.png);
 background-repeat: no-repeat;
 background-size: 50% 100%;
 }
 
-#portfolio {
+#portfolio{
+height: 400px;
 position: absolute;
-width: 205px;
-height: 47px;
+width: 229px;
 left: 94px;
-top: 2400px;
+top: 2700px;
 
 font-family: Roboto;
 font-style: normal;
@@ -1031,70 +1054,84 @@ font-weight: bold;
 font-size: 48px;
 line-height: 56px;
 
-color: #000000;
+color: black;
 }
+
+
 
 .line2 {
   position: absolute;
   width: 40px;
   height: 0px;
   left: 94px;
-  top: 2480px;
-  border: 5px solid #4BBEFF;
+  top: 2770px;
+  border: 3px solid #4BBEFF;
 }
 
-.pic2 {
+.radar {
   position: absolute;
-  width: 400px;
-  height: 400px;
-  left: 10px;
-  top: 2500px;
-  background: url(https://i.imgur.com/dGgaQ7S.png);
-  background-size: 100% 100%;
+  width: 200px;
+  height: 200px;
+  left: 30%;
+  top: 2950px;
+  background: url(https://i.imgur.com/tV6I944.png);
   background-repeat: no-repeat;
+  background-size: 90% 80%;
+  opacity: .5;
+  z-index: 1;
 }
 
-.pic3 {
+.picGraph {
   position: absolute;
-  width: 400px;
-  height: 170px;
-  left: 68px;
-  top: 2620px;
+  width: 548px;
+  height: 280px;
+  left: 2%;
+  top: 2900px;
 
   background: url(https://i.imgur.com/SaPNgBw.png);
-  background-size: 75% 100%;
+  box-shadow: rgba(166, 221, 250, 0.5);
   background-repeat: no-repeat;
+  background-size: 40% 40%;
 }
 
-.pic2-1 {
+.picRest {
   position: absolute;
-  width: 400px;
-  height: 400px;
-  left: 10px;
-  top: 2750px;
-  background: url(https://i.imgur.com/dGgaQ7S.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-
-.pic3-1 {
-  position: absolute;
-  width: 400px;
-  height: 170px;
-  left: 68px;
-  top: 2870px;
+  width: 548px;
+  height: 288px;
+  left: 40%;
+  top: 3030px;
 
   background: url(https://i.imgur.com/zUM2uiX.png);
-  background-size: 75% 100%;
+  box-shadow: rgba(166, 221, 250, 0.5);
   background-repeat: no-repeat;
+  background-size: 40% 40%;
 }
+
+svg {
+  width: 200px;
+  height: 50px;
+}
+
+.pointer1 {
+position: absolute;
+left: 30%;
+top: 2840px;
+
+}
+
+.pointer2 {
+position: absolute;
+left: 30%;
+top: 3150px;
+}
+
 
 #contact {
   position: absolute;
   width: 205px;
   height: 47px;
   left: 94px;
-  top: 3400px;
+  top: 3600px;
 
   font-family: Roboto;
   font-style: normal;
@@ -1110,32 +1147,49 @@ color: #000000;
     width: 40px;
     height: 0px;
     left: 94px;
-    top: 3480px;
-    border: 5px solid #4BBEFF;
+    top: 3670px;
+    border: 3px solid #6AA3FF;
+}
+
+
+.boxInv {
+  position: absolute;
+  width: 200px;
+  height: 150px;
+  left: 14%;
+  top: 3800px;
+
+  background:white;
+
 }
 
 .pic4 {
   position: absolute;
-  width: 420px;
-  height: 460px;
-  left: -5%;
-  top: 3456px;
-  background: url(https://i.imgur.com/heDcgS5.png);
-  background-size: 110% 130%;
+  width: 600px;
+  height: 400px;
+  left: 4%;
+  top: 3760px;
+
+  background: url(https://i.imgur.com/mZDOSJE.png);
+  background-size: 65% 65%;
   background-repeat: no-repeat;
+  filter: saturate(10);
+  opacity: .5;
 }
+
+
 
 .formTitle {
   position: absolute;
   width: 320px;
   height: 37px;
   left: 22%;
-  top: 3615px;
+  top: 3800px;
 
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 33px;
 
   color: #000000;
@@ -1145,13 +1199,14 @@ color: #000000;
   position: absolute;
   width: 73px;
   height: 35px;
-  left: 16%;
-  top: 3660px;
-
+  left: 20%;
+  top: 3845px;
   font-family: Roboto;
+  font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 12px;
   line-height: 29px;
+
   color: #000000;
 }
 
@@ -1159,8 +1214,8 @@ color: #000000;
     position: absolute;
     width: 200px;
     height: 35px;
-    left: 32%;
-    top: 3650px;
+    left: 30%;
+    top: 3830px;
     border-bottom: 1px solid #4BBEFF;
     z-index: 1;
 }
@@ -1169,13 +1224,13 @@ color: #000000;
   position: absolute;
   width: 73px;
   height: 35px;
-  left: 17%;
-  top: 3695px;
+  left: 20%;
+  top: 3870px;
 
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 12px;
   line-height: 29px;
 
   color: #000000;
@@ -1185,8 +1240,8 @@ color: #000000;
     position: absolute;
     width: 200px;
     height: 35px;
-    left: 32%;
-    top: 3685px;
+    left: 30%;
+    top: 3856px;
     border-bottom: 1px solid #4BBEFF;
     z-index: 1;
 }
@@ -1195,13 +1250,12 @@ color: #000000;
   position: absolute;
   width: 73px;
   height: 35px;
-  left: 10%;
-  top: 3730px;
-
+  left: 16%;
+  top: 3895px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 12px;
   line-height: 29px;
 
   color: #000000;
@@ -1210,9 +1264,9 @@ color: #000000;
 .box {
   position: absolute;
   width: 200px;
-  height: 100px;
-  left: 32%;
-  top: 3738px;
+  height: 50px;
+    left: 30%;
+    top: 3905px;
 
   background: #FFFFFF;
   border: 1px solid #4BBEFF;
@@ -1223,25 +1277,24 @@ color: #000000;
   position: absolute;
   width: 320px;
   height: 37px;
-  left: 22%;
-  top: 3921px;
+  left: 25%;
+  top: 4035px;
 
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 33px;
 
   color: #000000;
-  z-index: 1;
 }
 
 .line6 {
   position: absolute;
-  width: 64px;
+  width: 62px;
   height: 7px;
   left: 40%;
-  top: 3958px;
+  top: 4075px;
 
   background: #FFDF6E;
 }
@@ -1251,7 +1304,7 @@ color: #000000;
   width: 40px;
   height: 41px;
   left: 30%;
-  top: 3975px;
+  top: 4100px;
   background: url(https://i.imgur.com/rPcRXtL.png);
   background-size: 120% 80%;
   background-repeat: no-repeat;
@@ -1261,8 +1314,8 @@ color: #000000;
   position: absolute;
   width: 40px;
   height: 41px;
-  left: 44%;
-  top: 3975px;
+  left: 43.9%;
+  top: 4100px;
   background: url(https://i.imgur.com/arjqUVb.png);
   background-size: 80% 90%;
   background-repeat: no-repeat;
@@ -1273,7 +1326,7 @@ color: #000000;
   width: 50px;
   height: 43px;
   left: 55%;
-  top: 3975px;
+  top: 4100px;
   background: url(https://i.imgur.com/D4E8p90.png);
   background-size: 100% 75%;
   background-repeat: no-repeat;
@@ -1283,20 +1336,27 @@ color: #000000;
   position: absolute;
   width: 73px;
   height: 35px;
-  left: 47%;
-  top: 3840px;
+  left: 45%;
+  top: 3950px;
 
   font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
+  font-weight: bold;
+  font-size: 12px;
   line-height: 29px;
 
-  color: #000000;
-
+  color: #424242;;
+  z-index: 1;
 }
 
+.submitBotton {
+  position: absolute;
+  width: 50px;
+  height: 18px;
+  left: 43.8%;
+  top: 3956px;
 
+  background: linear-gradient(150.88deg, #B8B7AE 7.54%, rgba(255, 255, 255, 0) 147.52%);
+}
 
 
 }
