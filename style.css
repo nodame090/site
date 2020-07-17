@@ -1012,7 +1012,7 @@ color: #635F5F;
 .tab1 {
 position: absolute;
 width: 320px;
-height: 173px;
+height: 200px;
 left: 30px;
 top: 1690px;
 
@@ -1023,7 +1023,7 @@ opacity: 0.5;
 .tab2 {
 position: absolute;
 width: 9px;
-height: 173px;
+height: 200px;
 left: 28px;
 top: 1690px;
 
@@ -1035,7 +1035,7 @@ position: absolute;
 width: 334px;
 height: 280px;
 left: 25%;
-top: 1890px;
+top: 1930px;
 background: url(https://i.imgur.com/VDORVMf.png);
 background-repeat: no-repeat;
 background-size: 50% 100%;
@@ -1494,4 +1494,3 @@ nav ul li a:before {
 
 }
 }
-
