@@ -1,6 +1,5 @@
 html {
   scroll-behavior: smooth;
-
 }
 
 * {
@@ -9,8 +8,6 @@ html {
   box-sizing: border-box;
   color:black; 
   text-decoration: none;
-  //font-family: 'Cutive Mono', monospace;
- // font-weight: bold;
 }
 
 body, html {
@@ -21,7 +18,7 @@ body {
   
 position: relative;
 width: 100%;
-height: 10000px;
+height: 3900px;
 background: #FFFFFF;
 }
 
@@ -150,8 +147,6 @@ line-height: 56px;
 color: #424242;
 }
 
-
-
 .line {
   position: absolute;
   width: 40px;
@@ -227,7 +222,7 @@ top: 900px;
 
 background: url(https://i.imgur.com/VDORVMf.png);
 background-repeat: no-repeat;
-background-size: 40% 38.5%;
+background-size: 38% 38.5%;
 }
 
 #portfolio{
@@ -269,7 +264,6 @@ color: black;
   opacity: .5;
   z-index: 1;
 }
-
 
 
 .picGraph {
@@ -356,12 +350,25 @@ color: black;
     left: 100%;
 }
 
-.textCode3 {
+.textCode3 a {
+    color: #fffb00;
+    font-size: 20px;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+
+.textCode4 a {
     color: #fffb00;
     font-size: 20px;
     position: absolute;
     top: 40%;
-    left: 42%;
+    left: 40%;
     transform: translate(-50%, -50%);
     font-family: sans-serif;
     font-weight: bold;
@@ -724,6 +731,7 @@ nav ul li a:before {
   transform-origin: right;
   transition: transform .4s linear;
 }
+
 #check:checked ~ ul {
   left: 0;
   	}
@@ -941,9 +949,8 @@ color: #424242;
 
 
 @media (max-width: 440px) {
-  
 
-     label #btn {
+  label #btn {
     display: inline-block;
     position: relative;
   } 
@@ -972,8 +979,7 @@ color: #424242;
 }
   
 ul {
-    position: sticky;
-    position: -webkit-sticky;
+    position: fixed;
     width: 440px;
     height: 100vh;
     background: #424242;
@@ -1164,7 +1170,7 @@ color: black;
   top: 2950px;
   background: url(https://i.imgur.com/tV6I944.png);
   background-repeat: no-repeat;
-  background-size: 90% 80%;
+  background-size: 80% 70%;
   opacity: .5;
   z-index: 1;
 }
@@ -1227,7 +1233,7 @@ color: black;
   width: 548px;
   height: 288px;
   left: 40%;
-  top: 3030px;
+  top: 3060px;
 
   background: url(https://i.imgur.com/zUM2uiX.png);
   box-shadow: rgba(166, 221, 250, 0.5);
@@ -1250,11 +1256,26 @@ color: black;
     height: 115.2px;
 }
 
-.textCode3 {
+
+.textCode3 a {
     color: #fffb00;
     font-size: 15px;
     position: absolute;
-    top: 30%;
+    top: 15%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1;
+    
+}
+
+.textCode4 a {
+    color: #fffb00;
+    font-size: 15px;
+    position: absolute;
+    top: 25%;
     left: 20%;
     transform: translate(-50%, -50%);
     font-family: sans-serif;
@@ -1279,7 +1300,7 @@ top: 2840px;
 .pointer2 {
 position: absolute;
 left: 30%;
-top: 3150px;
+top: 3175px;
 }
 
 
@@ -1612,6 +1633,7 @@ nav ul li a:before {
   height: 10000px;
   background: #FFFFFF;
   }
+
 ul {
     position: fixed;
     width: 440px;
@@ -1665,70 +1687,3 @@ nav ul li a:before {
 
 }
 }
-
-@media (max-width: 400px) {
-     label #btn {
-    display: block;
-    position: absolute;
-  } 
-
-    body {
-  position: absolute;
-  width: 400px;
-  height: 10000px;
-  background: #FFFFFF;
-  }
-ul {
-    position: fixed;
-    width: 604px;
-    height: 100vh;
-    background: #424242;
-    top: 80px;
-    left: -100%;
-    text-align: center;
-    transition: all .5s;
-    z-index: 1;
-  }
-  nav ul li {
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-    color: white;
-
-  }
-  nav ul li a {
-    font-size: 20px;
-    color: white;
-  }
-  nav ul li a:hover {
-  Text-Decoration: None !important; 
-  color: white;
-}
-nav ul li a:before {
-  position: absolute;
-  content: '';
-  left: 0;
-  bottom: 0;
-  height: 3px;
-  width: 100%;
-  background: white;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform .4s linear;
-}
-
-#check:checked ~ ul {
-  left: 0;
-  	}
-
-#check:checked ~ label #btn {
-  display: none;
-}
-
-#check:checked ~ label #cancel {
-  display: block;
-  position: absolute;
-
-}
-}
-
